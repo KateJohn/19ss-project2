@@ -1,0 +1,53 @@
+#body {
+    margin-top: 0;
+    text-align: center;
+    background-color: white;
+}
+
+#logoPic {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#signUp {
+    margin-left: 0;
+}
+
+#form {
+    background-color: #aebdbe;
+    margin-top: 40px;
+    width: 400px;
+    text-align: left;
+    line-height: 40px;
+    padding: 10px 40px 20px 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+#SUSubmit {
+    width: 415px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #418b6a;
+}
+
+#register {
+    margin-top: 300px;
+}
+
+#foot {
+    margin-top: 70px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="src/css/header.css">
+    <link rel="stylesheet" type="text/css" href="src/css/body.css">
+    <link rel="stylesheet" type="text/css" href="src/css/index.css">
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<script src="src/js/log.js"></script>
+<div id="header">
+    <div id="logo">
+        <img src="img/system/logo.jpg" alt width="35" height="35">
+    </div>
+    <div id="navItems">
+        <a href="index.html" id="AIndex" class="select">首页</a>
+        <a href="src/browser.php" id="ABrowse">浏览</a>
+        <a href="src/search.php" id="ASearch">搜索</a>
+    </div>
+    <div class="dropdown">
+        <span>个人中心</span>
+        <div class="dropdownContent">
+            <a href="src/upload.php" id="AUpload"><img src="img/system/upload.png" width="20" alt/> 上传</a><br>
+            <a href="src/myPhoto.php" id="AMP"><img src="img/system/mine.png" width="20" alt/> 我的照⽚</a><br>
+            <a href="src/myLike.php" id="AML"><img src="img/system/like.png" width="20" alt/> 我的收藏</a><br>
+            <a href="src/login.html" id="ALogin" onclick="deleteCookie('name', '/');deleteCookie('password', '/')">
+                <img src="img/system/login.png" width="20" alt/> 登出
+            </a><br>
+        </div>
+    </div>
+</div>
+<div id="body">
+    <div id="headerPicture">
+        <img src="img/pic0.jpg" alt="" onclick="document.getElementById('details').click()">
+    </div>
+    <script>
+        $.get('src/php/favor.php', function (data) {
+            document.getElementById('bodyPicture').innerHTML = data
+        });
+    </script>
+    <div id="bodyPicture">
+    </div>
+    <div id="aside">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/system/top.png" alt="" id="top">
+                </a>
+            </li>
+            <li>
+                <img src="img/system/refresh.png" alt="" id="refresh"
+                     onclick="$.get('src/php/refresh.php', function (data) {document.getElementById('bodyPicture').innerHTML = data;})">
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="foot">
+    <div id="leftFoot">
+        <p>© 2020－2021 index.html, no rights reserved 复旦大学</p>
+        <p>京公网安备19302010005</p>
+        <p>违法和不良信息举报电话：4008353331-9</p>
+        <p>中国互联网举报中心 电话：12377</p>
+    </div>
+    <div id="rightFoot">
+        <ul>
+            <li>
+                <a href="">关于我们</a>
+            </li>
+            <li>
+                <a href="">联系我们</a>
+            </li>
+            <li>
+                <a href="">法律声明</a>
+            </li>
+            <li>
+                <a href="">帮助中心</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

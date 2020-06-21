@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>登录</title>
+</head>
+<body>
+<script src="js/log.js"></script>
+<div id="body">
+    <div id="logo">
+        <img src="../img/system/logo.jpg" alt="" width="100" id="logoPic">
+        <p id="signUp" class="title">登录logo</p>
+    </div>
+    <div id="form">
+        <form id="SUForm" method="post" action="php/login.php">
+            <p id="SUName" class="title">账号/邮箱</p>
+            <label>
+                <input id="SUIName" type="text" required name="name" class="input">
+            </label>
+            <p id="SUPassword" class="title">密码</p>
+            <label>
+                <input id="SUIPassword" type="password" required name="password" class="input">
+            </label>
+            <button type="submit" id="SUSubmit">登录</button>
+        </form>
+    </div>
+    <div id="register">
+        <p id="regText">新用户？<a href="register.html" id="regLink">点这注册</a></p>
+    </div>
+</div>
+<div id="foot">
+    <p>© 2020－2021 index.html, no rights reserved 复旦大学</p>
+</div>
+</body>
+</html>

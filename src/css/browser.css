@@ -1,0 +1,89 @@
+#leftBody {
+    margin-left: 3%;
+    width: 23%;
+    line-height: 25px;
+    display: inline-block;
+}
+
+#search {
+    background-color: #aebdbe;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#searchTitle {
+    width: 80%;
+}
+
+#hotThemes {
+    background-color: #aebdbe;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.firstType {
+    font-weight: bold;
+}
+
+#leftBody a {
+    color: #a57229;
+}
+
+#hotCountries {
+    background-color: #aebdbe;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#hotCities {
+    background-color: #aebdbe;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#rightBody {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    background-color: #aebdbe;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 30px;
+    width: 60%;
+}
+
+#pictures {
+    text-align: center;
+}
+
+.picture {
+    display: inline-block;
+    max-width: 20%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.picture img {
+    max-width: 100%;
+}
+
+.form {
+    display: inline-block;
+}
+
+select {
+    width: 80px;
+}
+
+#pages {
+    text-align: center;
+}
+
+#pages a {
+    margin: 4%;
+    color: steelblue;
+}

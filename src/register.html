@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <title>注册</title>
+</head>
+<body>
+<script type="text/javascript">
+    function validate_username(username) {
+        var emailReg = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+        if (username != "" && emailReg.test(username)) {
+            document.getElementById("test_user").innerHTML = "<span class=\"green\">√邮箱格式正确</span>";
+        } else {
+            document.getElementById("test_user").innerHTML = "<span class=\"red\">邮箱格式错误</span>";
+        }
+    }
+
+    function validate_password(password) {
+        var passwordReg = /^(?=.*?[0-9])(?=.*?[a-z])[0-9a-z]{8,}$/;
+        if (password != "" && passwordReg.test(password)) {
+            document.getElementById("test_pw").innerHTML = "<span class=\"green\">√密码格式正确</span>";
+        } else {
+            document.getElementById("test_pw").innerHTML = "<span class=\"red\">密码格式错误</span>";
+        }
+    }
+
+    function validate_password2(password2) {
+        var password = document.getElementById("SUIPassword").value;
+        if (password == "") {
+            document.getElementById("is_test_pw").innerHTML = "<span class=\"red\">密码不为空</span>";
+        } else if (password == password2) {
+            document.getElementById("is_test_pw").innerHTML = "<span class=\"green\">√两次输入的密码相同</span>";
+        } else {
+            document.getElementById("is_test_pw").innerHTML = "<span class=\"red\">两次输入的密码不相同</span>";
+            console.log("密码有6位，由数字和字母组成!");
+        }
+    }
+
+    function validate_form() {
+        var username = document.getElementById("SUIEmail").value;
+        var password = document.getElementById("SUIPassword").value;
+        var password2 = document.getElementById("SUIPassword2").value;
+        var emailReg = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+        var passwordReg = /^(?=.*?[0-9])(?=.*?[a-z])[0-9a-z]{8,}$/;
+
+        if (username != "" && emailReg.test(username)) {
+            if (password != "" && passwordReg.test(password)) {
+                if (password2 == password) {
+                    console.log("信息填写正确，可以正常提交！");
+                    return true;
+                } else {
+                    console.log("密码不一致，提交失败，请重新填写！");
+                    return false;
+                }
+            } else {
+                console.log("密码格式错误，提交失败，请重新填写！");
+                return false;
+            }
+        } else {
+            console.log("注册的账号不符合要求，提交失败，请重新填写！");
+            return false;
+        }
+    }
+</script>
+<div id="body">
+    <div id="logo">
+        <img src="../img/system/logo.jpg" alt="" width="100" id="logoPic">
+        <p id="signUp" class="title">注册logo</p>
+    </div>
+    <div id="form">
+        <form id="SUForm" method="post" action="php/register.php">
+            <p id="SUEmail" class="title">邮箱</p>
+            <label>
+                <input id="SUIEmail" type="email" required name="email" class="input" placeholder="只能用邮箱注册" onblur="validate_username(this.value)">
+                <span id="test_user"></span>
+            </label>
+            <p id="SUPassword" class="title">密码</p>
+            <label>
+                <input id="SUIPassword" type="password" required name="password" class="input" placeholder="不能少于8位,且必须有数字字母组合" onblur="validate_password(this.value)">
+                <span id="test_pw"></span>
+            </label>
+            <p id="SUPasswordAgain" class="title">确认密码</p>
+            <label>
+                <input id="SUIPassword2" type="password" required name="password" class="input" onblur="validate_password2(this.value)">
+                <span id="is_test_pw"></span>
+            </label>
+            <button type="submit" id="SUSubmit" onclick="return validate_form()">注册</button>
+        </form>
+    </div>
+</div>
+<div id="foot">
+    <p>© 2020－2021 index.html, no rights reserved 复旦大学</p>
+</div>
+</body>
+</html>

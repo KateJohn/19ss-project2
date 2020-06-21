@@ -1,0 +1,82 @@
+#myPhoto, #myLike {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #aebdbe;
+    line-height: 30px;
+}
+
+#result {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #aebdbe;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.img {
+    display: inline-block;
+    width: 20%;
+    margin-left: 3%;
+}
+
+.img img {
+    width: 100%;
+}
+
+.tc {
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 3%;
+    width: 70%;
+    vertical-align: top;
+}
+
+.picture {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.buttons {
+    display: inline-block;
+}
+
+#pages {
+    text-align: center;
+}
+
+#pages a {
+    margin: 3%;
+    color: steelblue;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    color: chocolate;
+    background-color: floralwhite;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modify {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.input {
+    visibility: hidden;
+    width: 10px;
+}
