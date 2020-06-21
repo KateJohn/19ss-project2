@@ -4,9 +4,7 @@
 
 <u>**Github 地址**</u>
 
-https://github.com/KateJohn/19ss-project1
-
-https://katejohn.github.io/19ss-project1/
+https://github.com/KateJohn/19ss-project2
 
 <u>**你的项⽬完成情况**</u>
 
@@ -14,10 +12,8 @@ https://katejohn.github.io/19ss-project1/
 
 <u>**Bonus的完成情况和解决⽅法**</u>
 
-`响应式布局`（~~一下午改的~~）靠把大部分 *px* 改成 *%*
+没有做，~~主要是懒~~
 
-另一个没有做，~~主要是不想改了~~
+<u>**你对 PJ 2 和本⻔课程的意⻅和建议**</u>
 
-<u>**你对 PJ 1 和本⻔课程的意⻅和建议**</u>
-
-挺好的，就这样
+挺好的，就这样~~（和PJ 1 时说的一样）~~
