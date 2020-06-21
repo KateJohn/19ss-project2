@@ -16,4 +16,4 @@ https://github.com/KateJohn/19ss-project2
 
 <u>**你对 PJ 2 和本⻔课程的意⻅和建议**</u>
 
-挺好的，就这样~~(和PJ 1 时说的一样)~~
+挺好的，就这样~~(和PJ1时说的一样)~~
